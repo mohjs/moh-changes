@@ -1,0 +1,28 @@
+{
+  "name": "moh-changes",
+  "version": "0.0.1",
+  "description": "CLI tool to build and generate change logs auto.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ava test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohjs/moh-changes.git"
+  },
+  "keywords": [
+    "mohjs",
+    "cli",
+    "changelogs"
+  ],
+  "author": "ole3021 (Oliver.W)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohjs/moh-changes/issues"
+  },
+  "homepage": "https://github.com/mohjs/moh-changes#readme",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "standard": "^10.0.3"
+  }
+}
