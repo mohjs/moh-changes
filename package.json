@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "CLI tool to build and generate change logs auto.",
   "main": "./lib/index.js",
+  "bin": {
+    "moh-changes": "./cli/index.js"
+  },
   "scripts": {
     "test": "NODE_ENV=test ava test"
   },
@@ -24,5 +27,12 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "caporal": "^0.7.0",
+    "github": "^11.0.0",
+    "inquirer": "^3.3.0",
+    "parse-link-header": "^1.0.1"
   }
 }
