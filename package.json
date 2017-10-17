@@ -1,6 +1,6 @@
 {
   "name": "moh-changes",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "CLI tool to build and generate change logs auto.",
   "main": "./lib/index.js",
   "scripts": {
