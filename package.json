@@ -33,6 +33,8 @@
     "caporal": "^0.7.0",
     "github": "^11.0.0",
     "inquirer": "^3.3.0",
-    "parse-link-header": "^1.0.1"
+    "ora": "^1.3.0",
+    "parse-link-header": "^1.0.1",
+    "preferences": "^0.2.1"
   }
 }
