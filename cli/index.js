@@ -4,15 +4,21 @@ const prog = require('caporal')
 const inquirer = require('inquirer')
 const Preferences = require('preferences')
 
-const { initRepoInfo, initChangeInfo } = require('../lib')
+const { initSpinner } = require('./spinner')
+
+const { initRepoInfo, initChangeInfo, emitter } = require('../lib')
 let prefs = new Preferences('moh-changes')
 
 const prepaerInfo = () => {
+  initSpinner()
   return initRepoInfo()
 }
 
 const login = () => new Promise((resolve, reject) => {
-  if (prefs.authInfo) return resolve(prefs.authInfo)
+  if (prefs.authInfo) {
+    emitter.emit('LOGIN', 'succeed', 'Success auto login')
+    return resolve(prefs.authInfo)
+  }
 
   return inquirer.prompt([
     {

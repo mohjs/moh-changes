@@ -1,7 +1,4 @@
 const inquirer = require('inquirer')
-const Preferences = require('preferences')
-
-const prefs = new Preferences('moh-changes')
 
 exports.login = () => new Promise((resolve, reject) => {
   inquirer.prompt([
