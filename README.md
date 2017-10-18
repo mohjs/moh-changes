@@ -42,7 +42,7 @@ $ moh-changes
 
 ## TODO:
 - [ ] Add info of what doing in the back to console.
-- [ ] Add github auth info cache.
+- [x] Add github auth info cache.
 - [ ] Update info based on current chagenlog.
 - [ ] Add NPM release [`npm version`] feature with changelog generate and git commit together.
 - [ ] Handle suggestioin types of changes `ADDED`, `CHANGED`, `DEPRECATED`, `REMOVED`, `FIXED`, `SECURITY`.
