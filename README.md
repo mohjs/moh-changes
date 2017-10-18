@@ -41,7 +41,7 @@ $ moh-changes
 ![moh-changes](https://user-images.githubusercontent.com/2676686/31682596-380315dc-b340-11e7-87f0-62873b68b702.png)
 
 ## TODO:
-- [ ] Add info of what doing in the back to console.
+- [x] Add info of what doing in the back to console with spinner.
 - [x] Add github auth info cache.
 - [ ] Update info based on current chagenlog.
 - [ ] Add NPM release [`npm version`] feature with changelog generate and git commit together.
