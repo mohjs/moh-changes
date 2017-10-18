@@ -1,0 +1,22 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## Unreleased  @2017-10-19
+
+- _None_
+
+## v0.2.0  @2017-10-19
+
+- [#3](https://github.com/mohjs/moh-changes/pull/3) [ADD] Add spinner and infos to console by: [_ole3021_](https://github.com/ole3021)
+- [#2](https://github.com/mohjs/moh-changes/pull/2) [ADD] Remember login infos after successfully login by: [_ole3021_](https://github.com/ole3021)
+
+## v0.1.0  @2017-10-18
+
+- [#1](https://github.com/mohjs/moh-changes/pull/1) [ADD] Generate CHANGELOG based on `PRs` and `tags` by: [_ole3021_](https://github.com/ole3021)
+
+\[v0.2.0\]: [https://github.com/mohjs/moh-changes/releases/tag/v0.2.0](https://github.com/mohjs/moh-changes/releases/tag/v0.2.0)  
+\[v0.1.0\]: [https://github.com/mohjs/moh-changes/releases/tag/v0.1.0](https://github.com/mohjs/moh-changes/releases/tag/v0.1.0)
