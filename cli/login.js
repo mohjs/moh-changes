@@ -17,7 +17,6 @@ exports.login = () => new Promise((resolve, reject) => {
       message: 'Enter your password:',
       validate: value => value.length ? true : 'Please enter your password'
     }
-  ]).then(authInfo => {
-    return resolve(authInfo)
-  }).catch(reject)
+  ]).then(resolve)
+  .catch(reject)
 })
