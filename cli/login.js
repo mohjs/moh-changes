@@ -19,7 +19,5 @@ exports.login = () => new Promise((resolve, reject) => {
     }
   ]).then(authInfo => {
     return resolve(authInfo)
-  }).catch(err => {
-    return reject(err)
-  })
+  }).catch(reject)
 })
