@@ -14,6 +14,7 @@ CLI tol to generate change logs automatically based on pull requests and tags
     * single command to relase new verion(tag and update changelog)
     * single command to generate/update changelog
     * single command to enter fully customised mode
+    * simple to authenticate with github for private repos
 * Easy to overwrite
     * changelog can be easily overwrite, and will be keep in future updates
 * Better performance
@@ -41,6 +42,7 @@ $ moh-changes
 
 ## TODO:
 - [ ] Add info of what doing in the back to console.
+- [ ] Add github auth info cache.
 - [ ] Update info based on current chagenlog.
 - [ ] Add NPM release [`npm version`] feature with changelog generate and git commit together.
 - [ ] Handle suggestioin types of changes `ADDED`, `CHANGED`, `DEPRECATED`, `REMOVED`, `FIXED`, `SECURITY`.
