@@ -28,3 +28,5 @@ exports.initSpinner = () => {
     if (isValidType(type)) spinners.logSpinner[type](info)
   })
 }
+
+exports.infoSpinner = ora()
