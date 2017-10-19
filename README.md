@@ -29,7 +29,7 @@ CLI tol to generate change logs automatically based on pull requests and tags
 
 ## Usage:
 ```shell
-$ moh-changes
+$ moh-changes / moh-changes init
 ```
 
 ## Output
