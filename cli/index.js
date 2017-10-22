@@ -60,6 +60,5 @@ prog
     prefs.authInfo = undefined
     infoSpinner.succeed(' Removed cached github login info')
   })
-  
 
 prog.parse(process.argv)
