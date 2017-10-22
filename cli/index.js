@@ -16,7 +16,7 @@ const prepaerInfo = () => {
 
 const login = () => new Promise((resolve, reject) => {
   if (prefs.authInfo) {
-    emitter.emit('LOGIN', 'succeed', 'Success auto login')
+    emitter.emit('LOGIN', 'succeed', ' Auto login succeed')
     return resolve(prefs.authInfo)
   }
 
@@ -60,6 +60,5 @@ prog
     prefs.authInfo = undefined
     infoSpinner.succeed(' Removed cached github login info')
   })
-  
 
 prog.parse(process.argv)

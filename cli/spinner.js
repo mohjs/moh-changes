@@ -6,10 +6,11 @@ const isValidType = type => ['start', 'succeed', 'fail', 'stop'].indexOf(type) >
 
 exports.initSpinner = () => {
   const spinners = {
-    checkSpinner: ora('Check repo info...'),
+    checkSpinner: ora(' Checking repo info...'),
     loginSpinner: ora(),
-    fetchSpinner: ora('Fetching PR & Release info...'),
-    logSpinner: ora('Generate Changelog info...')
+    readSpinner: ora(' Reading exist Changelog info...'),
+    fetchSpinner: ora(' Fetching PR & Release info...'),
+    logSpinner: ora(' Generating Changelog info...')
   }
 
   emitter.on('CHECK_REPO', (type, info) => {
@@ -18,6 +19,10 @@ exports.initSpinner = () => {
 
   emitter.on('LOGIN', (type, info) => {
     if (isValidType(type)) spinners.loginSpinner[type](info)
+  })
+
+  emitter.on('READ_INFO', (type, info) => {
+    if (isValidType(type)) spinners.readSpinner[type](info)
   })
 
   emitter.on('FETCH_INFO', (type, info) => {
