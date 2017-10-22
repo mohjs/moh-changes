@@ -40,25 +40,30 @@ const login = () => new Promise((resolve, reject) => {
   .catch(reject)
 })
 
+const initChangeLog = (args, options, logger) => {
+  prepaerInfo()
+    .then(login)
+    .then(initChangeInfo)
+    .catch(err => {
+      if (err.code && err.code === 401) {
+        prefs.authInfo = undefined
+        infoSpinner.fail(' Auth with Github failed, please retry')
+      }
+    })
+}
+
+const removeLogInfo = (args, options, logger) => {
+  prefs.authInfo = undefined
+  infoSpinner.succeed(' Removed cached github login info')
+}
+
 prog
   .version(version)
   .description('A CLI tool to easily generate CHANGELOGS for project, based on PR on Github."')
+  .action(initChangeLog)
   .command('init', 'Generate the Changelog')
-  .action((args, options, logger) => {
-    prepaerInfo()
-      .then(login)
-      .then(initChangeInfo)
-      .catch(err => {
-        if (err.code && err.code === 401) {
-          prefs.authInfo = undefined
-          infoSpinner.fail(' Auth with Github failed, please retry')
-        }
-      })
-  })
+  .action(initChangeLog)
   .command('reset', 'Reset Github login info to null')
-  .action((args, options, logger) => {
-    prefs.authInfo = undefined
-    infoSpinner.succeed(' Removed cached github login info')
-  })
+  .action(removeLogInfo)
 
 prog.parse(process.argv)
