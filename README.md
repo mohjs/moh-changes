@@ -38,7 +38,7 @@ $ moh-changes / moh-changes init
 
 ### ScreenShot
 
-![moh-changes](https://user-images.githubusercontent.com/2676686/31682596-380315dc-b340-11e7-87f0-62873b68b702.png)
+![moh-changes](https://user-images.githubusercontent.com/2676686/31860241-f344625c-b6dc-11e7-82cb-dc23cc0e14dd.png)
 
 ## TODO:
 - [ ] Add NPM release [`npm version`] feature with changelog generate and git commit together.
